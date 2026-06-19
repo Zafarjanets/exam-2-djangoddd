@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu register</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <h1 class="c">Register page</h1>
+    <a href="{% url 'login' %}" class="c">login</a>
+    
+    <form action="" method="post" class="unpul">
+        {% csrf_token %}
+        
+        <label for="username">Username</label>
+        <input required type="text" class="unn" name="username"> <br>
+
+        <label for="first_name">first name</label>
+        <input required type="text" class="unn" name="first_name"> <br>
+
+
+        <label for="last_name">last name</label>
+        <input required type="text" class="unn" name="last_name"> <br>
+
+
+        <label for="password1">Enter ur password</label>
+        <input required type="text" class="unn" name="password1"> <br>
+
+        <label for="password2">Confirm ur password</label>
+        <input required type="text" class="unn" name="password2"> <br>
+
+        <button type="submit" class="but">Register</button>
+
+
+    </form>
+    <p style="color: red;">{{error}}</p>
+</body>
+</html>

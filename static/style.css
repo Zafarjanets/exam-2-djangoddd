@@ -1,0 +1,45 @@
+.unpul{
+    background-color: rgb(187, 211, 255);
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 30%;
+    height: 500px;
+    
+}
+body{
+    background-color: yellow;
+
+}
+.unn{
+    margin-bottom: 15px;
+    height: 30px;
+    border-radius: 10px;
+}
+.but{
+    height: 40px;
+    border-radius: 10px;
+    background-color: brown;
+    color: white;
+
+}
+.but:hover{
+    background-color: rgb(254, 106, 106);
+}
+.unput{
+    background-color: rgb(187, 211, 255);
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 30%;
+    height: 300px;
+    margin-top: 140px;
+    
+}
+.c{
+    margin-left: 130px;
+}

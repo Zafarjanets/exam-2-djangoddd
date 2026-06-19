@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu register</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <a href="{% url 'register' %}" class="c">register</a>
+    <form action="" method="post" class="unput">
+        <h1 class="c">vxod page</h1>
+
+        {% csrf_token %}        
+        <label for="username">Username</label>
+        <input required type="text" class="unn" name="username"> <br>
+
+        <label for="password1">Enter ur password</label>
+        <input required type="text" class="unn" name="password1"> <br>
+
+   
+
+        <button type="submit" class="but">Register</button>
+
+
+    </form>
+    <p style="color: red;">{{error}}</p>
+</body>
+</html>
