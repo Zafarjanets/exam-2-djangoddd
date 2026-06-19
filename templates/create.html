@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>create contact</h1>
+    <form action="" class="box" method="post">
+        {% csrf_token %}
+        <label for="title"></label>
+        <input required type="text" name="title"  value="{{note.title|default:''}} "> <br>
+        <input required type="text" name="title"  value="{{note.title|default:''}} "> <br>
+        <button type="submit">save</button>
+    </form>
+</body>
+</html>

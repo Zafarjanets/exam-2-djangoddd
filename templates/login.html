@@ -11,18 +11,15 @@
 
     <a href="{% url 'register' %}" class="c">register</a>
     <form action="" method="post" class="unput">
-        <h1 class="c">vxod page</h1>
-
-        {% csrf_token %}        
+        {% csrf_token %}
         <label for="username">Username</label>
-        <input required type="text" class="unn" name="username"> <br>
+        <input required type="text" name="username" class="unn"> <br>
 
-        <label for="password1">Enter ur password</label>
-        <input required type="text" class="unn" name="password1"> <br>
+        <label for="password">Enter ur password</label>
+        <input required type="text" name="password" class="unn"> <br>
 
-   
 
-        <button type="submit" class="but">Register</button>
+        <button type="submit" class="but">Login</button>
 
 
     </form>
